@@ -1,0 +1,21 @@
+name:                tidal-midi-generic
+version:             0.0.1
+synopsis:            custom tidal-midi module
+-- description:
+homepage:            http://tidal.lurk.org/
+license:             GPL-3
+license-file:        LICENSE
+author:              Kevin Bednar
+maintainer:          Kevin Bednar <spednar@gmail.com>
+Stability:           Experimental
+Copyright:           (c) Kevin Bednar, 2016
+category:            Sound
+build-type:          Simple
+cabal-version:       >=1.4
+
+Description: Generic Midi Implementation for TidalCycles 0.8 forked from Kindohm/Mike Hodnick refactor.
+
+library
+  Exposed-modules: Sound.Tidal.MIDI.CustomParams, Sound.Tidal.MIDI.GenericMIDI
+
+  Build-depends: base < 5, tidal-midi, tidal, PortMidi, process, hashable, containers, hosc, time, bytestring
